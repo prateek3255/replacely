@@ -16,5 +16,11 @@
         "32": "images/replacely32.png",
         "48": "images/replacely48.png",
         "128": "images/replacely128.png"
-    }
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://medium.com/*"],
+          "js": ["contentScript.js"]
+        }
+      ]
 }
