@@ -3,6 +3,7 @@
     "version": "0.1",
     "description": "An extension to replace text in medium articles",
     "manifest_version": 2,
+    "permissions": ["declarativeContent"], 
     "page_action": {
         "default_icon": {
             "16": "images/replacely16.png",
@@ -22,5 +23,9 @@
           "matches": ["https://medium.com/*"],
           "js": ["contentScript.js"]
         }
-      ]
+      ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
 }
